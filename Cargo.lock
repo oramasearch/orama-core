@@ -164,6 +164,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "approx"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
 name = "arbitrary"
 version = "1.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2822,7 +2831,7 @@ version = "0.15.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "adb12d4e967ec485a5f71c6311fe28158e9d6f4bc4a447b474184d0f91a8fa32"
 dependencies = [
- "approx",
+ "approx 0.4.0",
  "matrixmultiply",
  "num-complex",
  "num-integer",
@@ -4011,6 +4020,7 @@ name = "rustorama"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "approx 0.5.1",
  "assert_approx_eq",
  "async-trait",
  "axum",
@@ -4057,6 +4067,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_v8",
+ "simsimd",
  "smallvec",
  "strum 0.26.3",
  "strum_macros 0.26.4",
@@ -4316,6 +4327,15 @@ name = "similar"
 version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1de1d4f81173b03af4c0cbed3c898f6bff5b870e4a7f5d6f4057d62a7a4b686e"
+
+[[package]]
+name = "simsimd"
+version = "6.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56838e1a0aceaef39fc1327227033efa84a294f54a39b356eefa5c60c885e9f0"
+dependencies = [
+ "cc",
+]
 
 [[package]]
 name = "sketches-ddsketch"
