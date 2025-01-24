@@ -23,7 +23,7 @@ reader_side:
     config:
         data_dir: ./.data/reader
         # The number of the write operation after the read side will commit the changes
-        insert_batch_commit_size: 300
+        insert_batch_commit_size: 3000
 
 ai_server:
     scheme: http
